@@ -1,0 +1,115 @@
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\bin\Debug\recepcion-recepcion.exe.config
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\bin\Debug\recepcion-recepcion.exe
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\bin\Debug\recepcion-recepcion.pdb
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.csprojResolveAssemblyReference.cache
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Administrador_usu.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Base.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Boleta_servicio.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.descripcion.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Form1.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Form2.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.LOGIN.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.menu.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Properties.Resources.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.csproj.GenerateResource.Cache
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\RdlCompile.cache
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\RdlCompile.compiled
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.exe
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.pdb
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\bin\Debug\Boleta_Recepcion.rdlc
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\bin\Debug\BarcodeLib.dll
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.agregar_cliente.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Lab_Marcacion.resources
+C:\Users\turciosi\Documents\Visual Studio 2012\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.marcado.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\recepcion-recepcion.exe.config
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.exe
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.pdb
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Boleta_Recepcion.rdlc
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\recepcion-recepcion.exe
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\recepcion-recepcion.pdb
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\BarcodeLib.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.csprojResolveAssemblyReference.cache
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Administrador_usu.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.agregar_cliente.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Base.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Boleta_servicio.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.descripcion.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Form1.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Form2.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Lab_Marcacion.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.LOGIN.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.marcado.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.menu.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion_recepcion.Properties.Resources.resources
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\recepcion-recepcion.csproj.GenerateResource.Cache
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\RdlCompile.cache
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\RdlCompile.compiled
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.Design.DLL
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\bin\Debug\LND.exe.config
+C:\Users\navarrow\Desktop\recepcion-recepcion\recepcion-recepcion\obj\Debug\LND.Properties.Resources.resources
