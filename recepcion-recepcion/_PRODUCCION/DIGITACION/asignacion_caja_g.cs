@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace LND
 {
@@ -20,6 +21,7 @@ namespace LND
 
         Cconectar con = new Cconectar();
         DataTable saep = new DataTable();
+        DataTable barras_ = new DataTable();
 
         Import_Ped_SAE SAE_import = new Import_Ped_SAE();
         public static int se_= 20;
@@ -29,8 +31,12 @@ namespace LND
         string esquemas = LOGIN.slg_;
         string inicio;
         string final;
-
+        string ords;
         String Empresa;
+
+        Byte[] bindata = new byte[0];
+        byte[] foto = new byte[0];
+        BarcodeLib.Barcode code = new BarcodeLib.Barcode();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -61,7 +67,14 @@ namespace LND
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             //dataGridView1.ReadOnly = true;
             dataGridView1.AllowUserToAddRows = false;
-           
+
+            dataGridView2.Enabled = true;
+            dataGridView2.RowHeadersVisible = false;
+            //dataGridView1.AutoResizeColumns();
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            //dataGridView1.ReadOnly = true;
+            dataGridView2.AllowUserToAddRows = false;
+
 
 
         }
@@ -76,57 +89,62 @@ namespace LND
 
         private void button2_Click(object sender, EventArgs e)
         {
-         
-            
-            for (int p = 0; p < dataGridView1.RowCount; p++)
+
+            if (comboBox1.Text == null || comboBox1.Text == "" || comboBox1.Text == string.Empty)
             {
-                 orden = Convert.ToString(dataGridView1.Rows[p].Cells["COD_ORDEN"].Value);
-                string cajita = Convert.ToString(dataGridView1.Rows[p].Cells["CAJA"].Value);
-                string pedido = Convert.ToString(dataGridView1.Rows[p].Cells["PEDIDO_SAE"].Value);
-                string barras = Convert.ToString(dataGridView1.Rows[p].Cells["COD_BARRA"].Value);
-                //OR0038123
-                if (cajita == null || cajita == "")
+                MessageBox.Show("Por favor colocar si esta orden lleva aro...", "Informacion: No tiene Aro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                for (int p = 0; p < dataGridView1.RowCount; p++)
                 {
-                    MessageBox.Show("Por favor, elejir una orden y asignarle una número de caja...", "Informacion: No tiene caja", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    if (barras == null)
-                    { }
-
-                    if (pedido == "")
+                    orden = Convert.ToString(dataGridView1.Rows[p].Cells["COD_ORDEN"].Value);
+                    string cajita = Convert.ToString(dataGridView1.Rows[p].Cells["CAJA"].Value);
+                    string pedido = Convert.ToString(dataGridView1.Rows[p].Cells["PEDIDO_SAE"].Value);
+                    //  string barras = Convert.ToString(dataGridView1.Rows[p].Cells["COD_BARRA"].Value);
+                    //OR0038123
+                    if (cajita == null || cajita == "")
                     {
-                        /// no ingresar a sae...
-                        /// mostrar un mensaje que esta orden ya tiene un pedido en sae y una caja asignada...
-                        /// mostrar el numero de caja y el pedido de sae, junto con la orden
-                        /// aparezca el boton aceptar
-                        
-                        SAE_import.insertar(orden, empresa);
-
-                        Boleta_servicio bs = new Boleta_servicio();
-                        bs.ShowDialog();
+                        MessageBox.Show("Por favor, elejir una orden y asignarle una número de caja...", "Informacion: No tiene caja", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    else if (pedido != null)
+                    else
                     {
-                        ///ingresar a sae, depenndiendo en que empresa se ingresara y se realizara la modificacion.
-                        // solo deja las que no cambia..
-                        //DataGridViewRow row = dataGridView1.Rows[p];
-                        //dataGridView1.Rows.Remove(row);
-                        buscar_pedido_sae(esquemas, orden);
+                        if (pedido == "")
+                        {
+                            /// no ingresar a sae...
+                            /// mostrar un mensaje que esta orden ya tiene un pedido en sae y una caja asignada...
+                            /// mostrar el numero de caja y el pedido de sae, junto con la orden
+                            /// aparezca el boton aceptar
 
-                        MessageBox.Show("Comentarle que esta orden " + orden + " con su pedido " + pedido_sae + ", contiene ya un pedido, le pedimo que realice solo la modificacion de la caja...", "Informacion: No tiene caja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ///se modifica el estado general de la orden...
+                            cambiar_estado(orden);
 
+                            SAE_import.insertar(orden, empresa);
+
+                            Boleta_servicio bs = new Boleta_servicio();
+                            bs.ShowDialog();
+                        }
+                        else if (pedido != null)
+                        {
+                            ///ingresar a sae, depenndiendo en que empresa se ingresara y se realizara la modificacion.
+                            // solo deja las que no cambia.. 
+                            //DataGridViewRow row = dataGridView1.Rows[p];
+                            //dataGridView1.Rows.Remove(row);
+                            buscar_pedido_sae(esquemas, orden);
+
+                            MessageBox.Show("Comentarle que esta orden " + orden + " con su pedido " + pedido_sae + ", contiene ya un pedido, le pedimo que realice solo la modificacion de la caja...", "Informacion: No tiene caja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                        }
+                        //Update
+
+
+
+                        button1_Click(null, null);
 
                     }
-                    //Update
-                   
-                  
-
-                    button1_Click(null, null);
-                    
                 }
             }
-
         }
 
         private void buscar_pedido_sae(string esquema, string ordenes)
@@ -151,7 +169,7 @@ namespace LND
             con.conectar("LESA");
 
             saep.Clear();
-            SqlCommand cm2 = new SqlCommand("SELECT ENC.[COD_ORDEN],'' AS CAJA  ,[PEDIDO_GUATE] , PEDIDO_SAE, ENC.COD_BARRA FROM [" + esquemas + "].[PEDIDO_ENC] AS ENC LEFT JOIN ["+ esquemas + "].[PEDIDO_DET_CMPL]  AS CM ON ENC.COD_ORDEN = CM.COD_ORDEN WHERE  ESTADO_LAB <> 'ANULADO' AND FECHA_IN >= '" + inicio + "' AND ENC.FECHA_IN <= '" + final + "'  AND CM.NUM_CAJA IS NULL", con.cmdnv);
+            SqlCommand cm2 = new SqlCommand("SELECT ENC.[COD_ORDEN],'' AS CAJA  ,[PEDIDO_GUATE] , PEDIDO_SAE FROM [" + esquemas + "].[PEDIDO_ENC] AS ENC LEFT JOIN ["+ esquemas + "].[PEDIDO_DET_CMPL]  AS CM ON ENC.COD_ORDEN = CM.COD_ORDEN WHERE  ESTADO_LAB <> 'ANULADO' AND FECHA_IN >= '" + inicio + "' AND ENC.FECHA_IN <= '" + final + "'  AND CM.NUM_CAJA IS NULL AND ENC.COD_BARRA IS NOT NULL", con.cmdnv);
             SqlDataAdapter da = new SqlDataAdapter(cm2);
             da.Fill(saep);
             dataGridView1.DataSource = saep;
@@ -159,6 +177,77 @@ namespace LND
             con.Desconectar("LESA");
 
             this.button2.Enabled = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int p = 0; p < dataGridView2.RowCount; p++)
+            {
+                ords = Convert.ToString(dataGridView2.Rows[p].Cells["COD_ORDEN"].Value);
+
+                ///asignar codigo de barras aquellos pedidos que no lo tengan...
+                panel1.BackgroundImage = code.Encode(BarcodeLib.TYPE.CODE128, ords, Color.Black, Color.White, 166, 415);
+                Image img = (Image)panel1.BackgroundImage.Clone();
+
+                con.conectar("NV");
+                SqlCommand cmd3 = new SqlCommand("UPDATE "+ esquemas +".[PEDIDO_ENC] SET COD_BARRA ='" + imageToByteArray(img) +"' WHERE COD_ORDEN = '" + ords + "'");
+                cmd3.Connection = con.cmdnv;
+                cmd3.ExecuteNonQuery();
+
+                con.Desconectar("NV");
+
+            }
+
+            MessageBox.Show("El proceso se termino con existo..", "Informacion: Proceso Completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
+
+        public byte[] imageToByteArray(System.Drawing.Image imageIn)
+        {
+            using (var ms = new MemoryStream())
+            {
+                imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+                return ms.ToArray();
+            }
+        }
+
+        private void cargar_sin_barras()
+        {
+            barras_.Clear();
+
+            con.conectar("LESA");
+
+            saep.Clear();
+            SqlCommand cm2 = new SqlCommand("SELECT ENC.[COD_ORDEN], PACIENTE AS NOMBRE_DEL_PACIENTE FROM "+ esquemas +".[PEDIDO_ENC] AS ENC LEFT JOIN "+ esquemas +".[PEDIDO_DET_CMPL]  AS CM ON ENC.COD_ORDEN = CM.COD_ORDEN WHERE  ESTADO_LAB <> 'ANULADO' AND ENC.COD_BARRA IS NULL", con.cmdnv);
+            SqlDataAdapter da = new SqlDataAdapter(cm2);
+            da.Fill(barras_);
+            dataGridView2.DataSource = barras_;
+
+            con.Desconectar("LESA");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cargar_sin_barras();
+        }
+        
+        private void cambiar_estado( string orden)
+        {
+            try
+            {
+                con.conectar("NV");
+                SqlCommand cmd3 = new SqlCommand("UPDATE " + esquemas + ".[PEDIDO_ENC] SET ESTADO_LAB ='BODEGA' WHERE COD_ORDEN = '" + orden + "'");
+                cmd3.Connection = con.cmdnv;
+                cmd3.ExecuteNonQuery();
+
+                con.Desconectar("NV");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No termino de cambiar el estado general de la orden, comunicarse con IT  ", ex.ToString());
+            }
+            
         }
     }
 }

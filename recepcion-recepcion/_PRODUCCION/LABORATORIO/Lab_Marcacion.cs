@@ -360,7 +360,7 @@ namespace LND
             }
             catch (Exception ex)
             {
-                MessageBox.Show("no encuentra la orden, por favor llamar a IT ", ex.ToString());
+                MessageBox.Show("no encuentra la orden por no tener numero de JOB, por favor llamar a IT ", ex.ToString());
             }
 
 
