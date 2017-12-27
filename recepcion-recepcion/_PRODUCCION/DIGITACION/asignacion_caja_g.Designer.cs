@@ -46,6 +46,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -60,6 +61,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(497, 185);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDown);
             this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
             // 
             // label6
@@ -110,11 +113,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(217, 26);
+            this.label3.Location = new System.Drawing.Point(176, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 43;
-            this.label3.Text = "label3";
+            this.label3.Text = "ninguno..";
             // 
             // panel1
             // 
@@ -148,7 +151,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(406, 21);
+            this.button2.Location = new System.Drawing.Point(527, 18);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 29);
             this.button2.TabIndex = 2;
@@ -171,27 +174,26 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
             "ARO PENDIENTE",
             "ARO RECIBIDO",
             "SIN ARO"});
-            this.comboBox1.Location = new System.Drawing.Point(18, 26);
+            this.comboBox1.Location = new System.Drawing.Point(313, 21);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 24);
+            this.comboBox1.Size = new System.Drawing.Size(184, 26);
             this.comboBox1.TabIndex = 47;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(144, 351);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(18, 351);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(497, 63);
+            this.groupBox2.Size = new System.Drawing.Size(623, 63);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Procesar";
             // 
             // groupBox3
             // 
@@ -224,6 +226,16 @@
             this.button4.Text = "Cargar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 20);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Orden seleccionado:";
             // 
             // asignacion_caja_g
             // 
@@ -271,5 +283,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1;
     }
 }

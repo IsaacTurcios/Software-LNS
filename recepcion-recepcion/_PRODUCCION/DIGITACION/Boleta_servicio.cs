@@ -46,24 +46,25 @@ namespace LND
             this.reportViewer1.LocalReport.ReportPath = @"C:\LND\Boleta_Recepcion.rdlc";
 
             cnx.conectar("NV");
-            
-            if(Form2.se == 6) //agregar
+
+            if (Form2.se == 6) //agregar
             {
                 numero_pedido = descripcion.cod_orden;
-              
+
             }
-           else if (Form2.se == 9)//editar
+            else if (Form2.se == 9)//editar
             {
                 numero_pedido = Form2.numped;
             }
-            else if(CONTROL_CALIDAD.se_ == 10)
+            else if (CONTROL_CALIDAD.se_ == 10)
             {
                 numero_pedido = CONTROL_CALIDAD.dop;
             }
-            else if(asignacion_caja_g.se_ == 20)
+            else if (asignacion_caja_g.se_ == 20)
             {
                 numero_pedido = asignacion_caja_g.orden;
             }
+            
 
             //SqlCommand sql = new SqlCommand("[LDN].[BOLETA_LND]", cnx.cmdls);
             //sql.CommandType = CommandType.StoredProcedure;

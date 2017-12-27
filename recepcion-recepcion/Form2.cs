@@ -360,6 +360,7 @@ namespace LND
                 MessageBox.Show("no funciona la conexion" + tp.ToString());
             }
         }
+
         private void restricciones()
         {
             if (var_menu_usuario == "2")
@@ -519,6 +520,7 @@ namespace LND
         private void dtgDetalle_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             menupedido.MenuItems.Clear();
+              
             idx = dtgDetalle.CurrentRow.Index;
             numped = Convert.ToString(dtgDetalle.Rows[idx].Cells[0].Value);
             cliente = Convert.ToString(dtgDetalle.Rows[idx].Cells[1].Value);

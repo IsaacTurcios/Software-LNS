@@ -353,7 +353,7 @@ namespace LND
                     }
                     else if (codigo_empresa == "3")
                     {
-                        IVA = "15";
+                        IVA = "0";
                     }
 
                     SqlCommand inset_det = new SqlCommand("exec sp_executesql N'insert into  PAR_FACTP" + Extencion_ + "  (CVE_DOC, NUM_PAR, CVE_ART, CANT, PXS, PREC, COST, IMPU1, IMPU2, IMPU3, IMPU4, IMP1APLA, IMP2APLA, IMP3APLA, IMP4APLA, TOTIMP1, TOTIMP2, TOTIMP3, TOTIMP4, DESC1, DESC2, DESC3, COMI, APAR, ACT_INV, NUM_ALM, POLIT_APLI, TIP_CAM, UNI_VENTA, TIPO_PROD, TIPO_ELEM, CVE_OBS, REG_SERIE, E_LTPD, NUM_MOV, TOT_PARTIDA, IMPRIMIR) values (@P1, @P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P15, @P16, @P17, @P18, @P19, @P20, @P21, @P22, @P23, @P24, @P25, @P26, @P27, @P28, @P29, @P30, @P31, @P32, @P33, @P34, @P35, @P36, @P37)',N'@P1 varchar(20), @P2 int, @P3 varchar(9), @P4 float, @P5 float, @P6 float, @P7 float, @P8 float, @P9 float, @P10 float, @P11 float, @P12 smallint, @P13 smallint, @P14 smallint, @P15 smallint, @P16 float, @P17 float, @P18 float, @P19 float, @P20 float, @P21 float, @P22 float, @P23 float, @P24 float, @P25 varchar(1), @P26 int, @P27 varchar(1), @P28 float, @P29 varchar(10), @P30 varchar(1), @P31 varchar(1), @P32 int, @P33 int, @P34 int, @P35 int, @P36 float, @P37 varchar(1)','" + CVE_DOC + "'," + NUM_PAR + ",'" + CVE_ART + "'," + CANT + "," + PXS + "," + PREC + "," + COST + ",0,0,0, " + IVA + " ,4,4,4,0,0,0,0," + TOTIMP4 + "," + DESC1 + ", " + DESC2 + ",0,0,0,'N'," + NUM_ALM + ",'',1,'" + UNI_VENTA + "','" + TIPO_PROD + "','N'," + CVE_OBS + ",0,0,0," + TOT_PARTIDA + ",'S'");
